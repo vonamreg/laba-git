@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <style lang="css">
+        :root{
+            --flex-gap: 8px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #9d9d9d;
+            font-size: x-large;
+            color:whitesmoke;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            background: rgba(245, 245, 220, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 2px solid rgba(245, 245, 220, 0.3);
+            text-align: center;
+            gap: var(--flex-gap);
+            border-radius: 12px;
+            padding: 12px;
+        }
+        .container>p{
+            padding: 5px;
+        }
+        .inner-cont{
+            display: flex;
+            gap: var(--flex-gap);
+        }
+        .contacts, .tech-stack{
+            text-align: center;
+            flex: 1;
+            border: 2px solid #9d9d9d;
+            border-radius: 8px;
+            padding-bottom: 5px;
+        }
+        .title{
+            margin-bottom: 12px;
+            border-bottom: 2px solid #9d9d9d;
+            border-radius: 8px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Германов Михаил Юрьевич</p>
+        <div class="inner-cont">
+            <div class="contacts">
+                <p class="title">Контакты</p>
+                <p>〈 @obeylisk 〉</p>
+            </div>
+            <div class="tech-stack">
+                <p class="title">Стек</p>
+                <p>Celery, Python, FastAPI, PostgreSQL, Redis, Docker</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
